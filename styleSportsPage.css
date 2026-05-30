@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos de la barra superior */
+.navbar {
+    width: 100%;
+    height: 60px;           /* Altura de la barra */
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo negro semitransparente */
+    display: flex;/*convierte la barra en una caja flexible para poder utilizar "justify-content" y "align-items" para organizar los elementos dentro de ella automaticamente*/
+    justify-content: flex-start;  /* Alinea el botón a la izquierda (flex-end para derecha) */
+    align-items: center;    /* Centra el botón verticalmente en la barra */
+    position: absolute;     /* La barra flota sobre la imagen de fondo(por lo que se tienen que es especificar las coordenadas en las que flotara)*/
+    top: 0;/*pega el borde superior de la barra al borde superior de la pantalla*/
+    left: 0;/*pega el borde izquierdo de la barra al borde izquierdo de la pantalla*/
+    z-index: 10;            /* Asegura que esté por encima de todo */
+}
+
+/* Estilos del enlace/botón */
+.nav_link {
+    color: white;
+    text-decoration: none;  /* Elimina el subrayado de la letra */
+    margin-right: 30px;     /* Espacio desde la orilla derecha */
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    border: 1px solid white;
+    padding: 8px 15px;      /* Ajusta la distancia de la letra de los bordes de la caja "arriba/abajo(8px), lados(15px)" */
+    transition: 0.3s;       /* Animación de transicion suave para el hover */
+}
+
+/* Estilos del enlace/botón version "hover" (cuando el raton pasa sobre el) */
+.nav_link:hover {
+    background-color: White;
+    color: Black;
+}
+
+.title_section {
+    /* --- Formato del background --- */
+    background-image: url("./Resourses/SportsPagePhoto.jpg"); /*Ruta de la imagen de fondo*/
+    background-size:cover ;
+    background-position: center;
+    background-repeat: no-repeat; /*Muestra la imagen como background una sola vez*/
+    height: 100vh; /*ajusta la altura de la imagen a la altura real de el monitor vh(viewport height)(100=100%)*/
+    margin: 0;/*Evita que alla algun margen entre el background y el limite de la pantalla*/
+    
+    display: flex;             /* Convierte la sección en un contenedor flexible */
+    justify-content: center;   /* Alinea el h1 horizontalmente */
+    align-items: center;       /* Alinea el h1 verticalmente */
+}
+
+.HomePageTitle {
+    color: white; 
+    font-family: Arial, sans-serif;
+    font-size: 4rem; 
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5); /*"movimiento horizontal de la sombra","movimiento vertical de la sombra", "suavidad de la sombra" rgba(Rojo, Verde, Azul y Alfa (transparencia))*/
+    margin:0;
+}
