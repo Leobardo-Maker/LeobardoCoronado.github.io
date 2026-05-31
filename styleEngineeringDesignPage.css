@@ -1,0 +1,43 @@
+.title_section {
+    /* --- Photo del background --- */
+    background-image: url("./Resourses/Engineering Design Resourses/EngineeringDesignLogo.jpg"); /*Ruta de la imagen de fondo*/
+}
+
+.OnShapeDesignsSection {
+    background-color: rgb(10, 14, 34); 
+    width: 100%;
+    max-width: 100%;          /* evita overflow horizontal */
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas fijas */
+    gap: 50px;
+    padding: 100px;
+    box-sizing: border-box;   /* evita que padding cause overflow */
+}
+
+.OnShapeDesignsPhoto {
+    width: 100%;
+    aspect-ratio: 16 / 10;     /* Todas las imágenes tendrán la misma proporción */
+    object-fit: scale-down;        /* recorta sin deformar */
+    display: block;           /* elimina espacios fantasmas */
+}
+
+.OnShapeDesignsPhoto:hover {
+    transform: scale(1.01); /* zoom suave */
+    transition: transform 0.3s ease; /* animación de transición */
+}
+
+.DesignItem {
+    display: flex; /* convierte cada item en un contenedor flexible */
+    flex-direction: column; /* organiza la imagen y el texto en columna */
+    align-items: center;
+    text-align: center;
+}
+
+.DesignCaption {
+    font-family: Arial, sans-serif;
+    margin-top: 12px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
